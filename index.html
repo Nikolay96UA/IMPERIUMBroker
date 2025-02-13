@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IMERIUMBroker</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./dist/css/main.min.css" />
+  </head>
+  <body>
+    <div class="background">
+      <header class="header">
+        <nav class="header__nav container">
+          <a class="header__logo" href="./index.html">
+            <picture>
+              <source
+                srcset="/img/Logo.png 1x, /img/Logo 2x.png 2x"
+                media="(min-width:480px)"
+              />
+              <img
+                srcset="
+                            /img/Logo.png 1x, /img/Logo 2x.png 2x
+                            "
+                src="./img/Logo.png"
+                alt="logo"
+              />
+            </picture>
+          </a>
+          <ul class="nav__list">
+            <li class="nav__items list">
+              <a class="nav__link" href="">Public Trading</a>
+            </li>
+            <li class="nav__items list">
+              <a class="nav__link" href="">Passive Income</a>
+            </li>
+            <li class="nav__items list">
+              <a class="nav__link" href="">Income and Security</a>
+            </li>
+            <li class="nav__items list">
+              <a class="nav__link" href="">Feedback</a>
+            </li>
+            <li class="nav__items list">
+              <button class="nav__button">
+                <svg class="button__icon" width="16px" height="17px">
+                  <use href="./img/symbol-defs.svg#Profile"></use>
+                </svg>
+                <span>Log In</span>
+              </button>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <main class="main"></main>
+    </div>
+  </body>
+</html>

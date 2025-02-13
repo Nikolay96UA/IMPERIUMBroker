@@ -1,0 +1,22 @@
+$primeryTextColor: rgb(255, 255, 255);
+$accentTextColor: rgba(115, 255, 242, 1);
+$text-secondary: rgba(220, 220, 220, 1);
+$modalBackground: rgba(255, 255, 255, 0.07);
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 16px;
+  padding-right: 16px;
+
+  @media screen and (min-width: 422px) {
+    width: 422px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+  @media screen and (min-width: 1216px) {
+    width: 1216px;
+  }
+}
