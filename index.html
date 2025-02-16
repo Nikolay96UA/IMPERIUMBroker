@@ -23,21 +23,29 @@
     <div class="background">
       <header class="header">
         <nav class="header__nav container">
-          <a class="header__logo" href="./index.html">
-            <picture>
-              <source
-                srcset="/img/Logo.png 1x, /img/Logo 2x.png 2x"
-                media="(min-width:480px)"
-              />
-              <img
-                srcset="
+          <div class="header-mob-container">
+            <a class="header__logo" href="./index.html">
+              <picture>
+                <source
+                  srcset="/img/Logo.png 1x, /img/Logo 2x.png 2x"
+                  media="(min-width:480px)"
+                />
+                <img
+                  srcset="
                             /img/Logo.png 1x, /img/Logo 2x.png 2x
                             "
-                src="./img/Logo.png"
-                alt="logo"
-              />
-            </picture>
-          </a>
+                  src="./img/Logo.png"
+                  alt="logo"
+                />
+              </picture>
+            </a>
+            <button class="mobile-menu__btn" data-menu-open>
+              <svg class="mobile-nenu__icon" width="24px" height="24px">
+                <use href="./img/symbol-defs.svg#Menu"></use>
+              </svg>
+            </button>
+          </div>
+
           <ul class="nav__list">
             <li class="nav__items list">
               <a class="nav__link" href="">Public Trading</a>
@@ -56,14 +64,49 @@
                 <svg class="button__icon" width="16px" height="17px">
                   <use href="./img/symbol-defs.svg#Profile"></use>
                 </svg>
-                <span>Log In</span>
+                <span class="log-btn__title">Log In</span>
               </button>
             </li>
           </ul>
         </nav>
+
+
+        <div class="mobile-menu is-hidden" data-menu>
+            <div class="menu-content">
+                <div>
+                    <button type="button" class="menu-close" data-menu-close>
+                        <svg width="40" height="40" class="close-menu__icon" aria-label="Перемикач мобільного меню">
+                            <use href="./img/HomeSvg/symbol-defs.svg#icon-close-modal" class="icon-menu" ></use>
+                        </svg>
+                    </button>
+        
+                    <nav class="mob-nav">
+                        <ul class="list mob-nav__site">
+                            
+        
+                            <li class="mob-nav__list">
+                                <a href="" class="mob-nav__link">Public Trading</a>
+                            </li>
+        
+                            <li class="mob-nav__list">
+                                <a href="" class="mob-nav__link">Passive Income</a>
+                            </li>
+
+                            <li class="mob-nav__list">
+                                <a href="" class="mob-nav__link">Income and Security</a>
+                            </li>
+
+                            <li class="mob-nav__list">
+                                <a href="" class="mob-nav__link">Feedback</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
       </header>
 
       <main class="main"></main>
     </div>
+
+    <script src="./js/modalMenu.js"></script>
   </body>
 </html>
