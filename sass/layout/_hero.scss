@@ -1,0 +1,58 @@
+.hero {
+  @media screen and (min-width: 768px) {
+  width: 310px;
+  }
+}
+
+// .hero__img {
+//     // position: absolute;
+//     // top: -40px;
+//   max-width: 100%;
+
+//   @media screen and (min-width: 768px) {
+//     width: 574px;
+//   }
+// }
+
+.hero__title {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 27px;
+  color: $primeryTextColor;
+  text-align: center;
+  margin-bottom: 21px;
+}
+
+.hero__description {
+  font-size: 13px;
+  line-height: 22px;
+  color: $text-secondary;
+
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.hero__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 25px;
+  color: $primeryTextColor;
+
+  width: 212px;
+  height: 50px;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  border: none;
+  border-radius: 15px;
+  background-image: linear-gradient(
+    to top,
+    rgba(44, 144, 247, 1),
+    rgba(5, 192, 204, 1)
+  );
+}
