@@ -3,7 +3,15 @@
     url(../../img/BG-mobile.webp);
   background-size: 100%;
   background-repeat: no-repeat;
-  background-position: top 230px right 20px, top;
+  background-position: top 330px right 4px, top;
+
+  @media screen and (min-width: 414px) {
+    background-image: url(../../img/hero-img-desktop-1x.png),
+      url(../../img/BG-mobile.webp);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: top 290px right 20px, top;
+  }
 
   @media screen and (min-width: 768px) {
     background-image: url(../../img/hero-img-desktop-1x.png),

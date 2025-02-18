@@ -1,18 +1,12 @@
 .hero {
   @media screen and (min-width: 768px) {
-  width: 310px;
+    width: 310px;
+  }
+
+  @media screen and (min-width: 1216px) {
+    width: 438px;
   }
 }
-
-// .hero__img {
-//     // position: absolute;
-//     // top: -40px;
-//   max-width: 100%;
-
-//   @media screen and (min-width: 768px) {
-//     width: 574px;
-//   }
-// }
 
 .hero__title {
   font-weight: 700;
@@ -21,6 +15,19 @@
   color: $primeryTextColor;
   text-align: center;
   margin-bottom: 21px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 27px;
+    line-height: 32px;
+    text-align: start;
+    margin-bottom: 24px;
+  }
+
+  @media screen and (min-width: 1216px) {
+    font-size: 40px;
+    line-height: 48px;
+    margin-bottom: 32px;
+  }
 }
 
 .hero__description {
@@ -30,6 +37,19 @@
 
   text-align: center;
   margin-bottom: 30px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 23px;
+    text-align: start;
+    margin-bottom: 24px;
+  }
+
+  @media screen and (min-width: 1216px) {
+    font-size: 15px;
+    line-height: 25px;
+    margin-bottom: 57px;
+  }
 }
 
 .hero__btn {
@@ -55,4 +75,11 @@
     rgba(44, 144, 247, 1),
     rgba(5, 192, 204, 1)
   );
+
+  @media screen and (min-width: 768px) {
+    display: inline-block;
+  }
+
+  @media screen and (min-width: 1216px) {
+  }
 }
