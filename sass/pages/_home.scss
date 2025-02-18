@@ -1,20 +1,20 @@
 .background {
-  background-image: url(/img/hero-img-desktop\ 1x.png),
-    url(/img/BackgroundImg/BG-mobile.webp);
+  background-image: url(./img/hero-img-desktop\ 1x.png),
+    url(./img/BackgroundImg/BG-mobile.webp);
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: top 230px right 20px, top;
 
   @media screen and (min-width: 768px) {
-    background-image: url(/img/hero-img-desktop\ 1x.png),
-      url(/img/BackgroundImg/BG-tablet.webp);
+    background-image: url(./img/hero-img-desktop\ 1x.png),
+      url(./img/BackgroundImg/BG-tablet.webp);
     background-size: 574px, 100%;
     background-repeat: no-repeat;
     background-position: top 45px right -20px, top;
   }
 
   @media screen and (min-width: 1216px) {
-    background-image: url(/img/hero-img-desktop\ 1x.png),
+    background-image: url(./img/hero-img-desktop\ 1x.png),
       url(/img/BackgroundImg/bg.webp), url(/img/BackgroundImg/BG-desktop.webp);
 
     background-size: 985px, 448px, cover;
