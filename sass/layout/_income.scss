@@ -1,0 +1,50 @@
+.income {
+  background-color: rgba(216, 4, 250, 0.04);
+  border: 1px solid rgba(239, 232, 232, 0.6);
+  border-radius: 20px;
+  padding: 30px 24px;
+  backdrop-filter: blur(30px);
+}
+
+
+.income__title {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 36px;
+  color: $primeryTextColor;
+  text-align: center;
+  margin-bottom: 11px;
+}
+
+.income__descripcion {
+  font-size: 14px;
+  line-height: 19px;
+  color: $textSecondary;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.income__img {
+  display: flex;
+  justify-content: center;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 22px;
+}
+
+.income__second-title {
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 22px;
+  color: $primeryTextColor;
+  text-align: center;
+  margin-bottom: 11px;
+}
+
+.income__second-descr {
+  font-size: 14px;
+  line-height: 19px;
+  color: $textSecondary;
+  text-align: center;
+  margin-bottom: 30px;
+}
