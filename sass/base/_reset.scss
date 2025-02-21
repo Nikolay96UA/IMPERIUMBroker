@@ -6,20 +6,17 @@ h5,
 h6,
 p,
 ul {
+  list-style: none;
   margin: 0;
   padding: 0;
 }
 
-body{
+body {
   font-family: "Montserrat", sans-serif;
 }
 
 a {
   text-decoration: none;
-}
-
-.list {
-  list-style: none;
 }
 
 .visually-hidden {

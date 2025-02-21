@@ -1,11 +1,10 @@
 .income {
   background-color: rgba(216, 4, 250, 0.04);
+  backdrop-filter: blur(30px);
   border: 1px solid rgba(239, 232, 232, 0.6);
   border-radius: 20px;
   padding: 30px 24px;
-  backdrop-filter: blur(30px);
 }
-
 
 .income__title {
   font-weight: 700;
@@ -14,6 +13,11 @@
   color: $primeryTextColor;
   text-align: center;
   margin-bottom: 11px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 32px;
+    line-height: 53px;
+  }
 }
 
 .income__descripcion {
@@ -22,14 +26,77 @@
   color: $textSecondary;
   text-align: center;
   margin-bottom: 30px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+    line-height: 26px;
+  }
 }
 
-.income__img {
+.income__list {
+  margin-bottom: 30px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 60px;
+  }
+
+  @media screen and (min-width: 1216px) {
+    margin-bottom: 80px;
+  }
+}
+
+.income__item {
+  @media screen and (min-width: 768px) {
+    display: flex;
+
+    align-items: center;
+  }
+}
+
+.income__item:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.income__item:last-child {
+  flex-direction: row-reverse;
+}
+
+.income__first-img {
   display: flex;
   justify-content: center;
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 22px;
+
+  @media screen and (min-width: 768px) {
+    margin-right: 16px;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-right: 16px;
+  }
+
+  @media screen and (min-width: 1216px) {
+    width: 299px;
+    margin-right: 114px;
+  }
+}
+
+.income__second-img {
+  display: flex;
+  justify-content: center;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 22px;
+
+  @media screen and (min-width: 768px) {
+    margin-left: 16px;
+  }
+
+  @media screen and (min-width: 1216px) {
+    width: 299px;
+    margin-left: 114px;
+  }
 }
 
 .income__second-title {
@@ -38,13 +105,197 @@
   line-height: 22px;
   color: $primeryTextColor;
   text-align: center;
-  margin-bottom: 11px;
+  padding-bottom: 17px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 22px;
+    line-height: 28px;
+    text-align: start;
+  }
+
+  @media screen and (min-width: 1216px) {
+    font-size: 26px;
+    line-height: 33px;
+    padding-bottom: 26px;
+  }
 }
 
 .income__second-descr {
+  position: relative;
   font-size: 14px;
   line-height: 19px;
   color: $textSecondary;
   text-align: center;
-  margin-bottom: 30px;
+  padding-top: 17px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+    line-height: 27px;
+    text-align: start;
+  }
+
+  @media screen and (min-width: 1216px) {
+    font-size: 16px;
+    line-height: 27px;
+    text-align: start;
+    padding-top: 26px;
+  }
+}
+
+.income__second-descr::before {
+  content: "";
+  position: absolute;
+  width: 200px;
+  top: 0px;
+  left: 40px;
+  border-bottom: 2px solid rgba(44, 144, 247, 1);
+  pointer-events: none;
+
+  @media screen and (min-width: 422px) {
+    content: "";
+    position: absolute;
+    width: 200px;
+    top: 0px;
+    left: 70px;
+
+    border-bottom: 2px solid rgba(44, 144, 247, 1);
+    pointer-events: none;
+  }
+
+  @media screen and (min-width: 768px) {
+    content: "";
+    position: absolute;
+    width: 200px;
+    top: 0px;
+    left: 0px;
+
+    border-bottom: 2px solid rgba(44, 144, 247, 1);
+    pointer-events: none;
+  }
+
+  @media screen and (min-width: 1216px) {
+    content: "";
+    position: absolute;
+    width: 200px;
+    top: 0px;
+    left: 0px;
+
+    border-bottom: 2px solid rgba(44, 144, 247, 1);
+    pointer-events: none;
+  }
+}
+
+.guide__title {
+  position: relative;
+  color: $primeryTextColor;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 25px;
+  text-align: center;
+  margin-bottom: 44px;
+
+  @media screen and (min-width: 422px) {
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: 26px;
+    line-height: 33px;
+    margin-bottom: 44px;
+  }
+
+  @media screen and (min-width: 1216px) {
+    margin-bottom: 64px;
+  }
+}
+
+.guide__title::before {
+  content: "";
+  position: absolute;
+  width: 200px;
+  top: 40px;
+  left: 41px;
+  border-bottom: 2px solid rgba(44, 144, 247, 1);
+  pointer-events: none;
+
+  @media screen and (min-width: 422px) {
+    content: "";
+    position: absolute;
+    width: 200px;
+    top: 40px;
+    left: 70px;
+
+    border-bottom: 2px solid rgba(44, 144, 247, 1);
+    pointer-events: none;
+  }
+
+  @media screen and (min-width: 768px) {
+    content: "";
+    position: absolute;
+    width: 200px;
+    top: 45px;
+    left: 240px;
+
+    border-bottom: 2px solid rgba(44, 144, 247, 1);
+    pointer-events: none;
+  }
+
+  @media screen and (min-width: 1216px) {
+    content: "";
+    position: absolute;
+    width: 200px;
+    top: 45px;
+    left: 465px;
+
+    border-bottom: 2px solid rgba(44, 144, 247, 1);
+    pointer-events: none;
+  }
+}
+
+.guide__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 326px;
+  height: 234px;
+  background-color: rgba(9, 19, 47, 0.6);
+  border-radius: 20px;
+  padding: 33px;
+}
+
+.guide__item:not(:last-child) {
+  margin-bottom: 46px;
+}
+
+.guide__background-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 79px;
+  height: 79px;
+  margin-bottom: 14px;
+  text-align: center;
+
+  border-radius: 100px;
+  background-color: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(30px);
+  box-shadow: 0px -1px 2px 0px rgba(239, 232, 232, 0.6);
+}
+
+.guide__icon {
+  width: 36px;
+  height: 36px;
+}
+
+.guide__subtitle {
+  font-size: 15px;
+  line-height: 21px;
+  color: $primeryTextColor;
+  margin-bottom: 16px;
+}
+
+.guide__descr {
+  font-size: 13px;
+  line-height: 18px;
+  color: $textSecondary;
 }
