@@ -390,3 +390,15 @@
     line-height: 19px;
   }
 }
+
+.guide__video {
+  width: 100%;
+
+  @media screen and (min-width: 768px) {
+    height: 385px;
+  }
+
+    @media screen and (min-width: 1220px) {
+      height: 540px;
+    }
+}

@@ -730,4 +730,18 @@ a {
     font-size: 14px;
     line-height: 19px;
   }
+}
+
+.guide__video {
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .guide__video {
+    height: 385px;
+  }
+}
+@media screen and (min-width: 1220px) {
+  .guide__video {
+    height: 540px;
+  }
 }/*# sourceMappingURL=main.css.map */
