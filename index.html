@@ -36,10 +36,10 @@
 
           <ul class="nav__list">
             <li class="nav__items list">
-              <a class="nav__link" href="">Public Trading</a>
+              <a class="nav__link" href="">Passive Income</a>
             </li>
             <li class="nav__items list">
-              <a class="nav__link" href="">Passive Income</a>
+              <a class="nav__link" href="">Public Trading</a>
             </li>
             <li class="nav__items list">
               <a class="nav__link" href="">Income and Security</a>
@@ -99,19 +99,21 @@
         </div>
       </header>
 
-      <main class="main container">
-        <section class="hero">
-          <div class="hero__container">
-            <h1 class="hero__title">Invest with the best crypto traders.</h1>
-            <p class="hero__description">
-              A service for automatic trade copying on cryptocurrency exchanges.
-              The service is completely free for traders.
-            </p>
-            <button class="hero__btn">Create an account</button>
-          </div>
-        </section>
+      <main class="main">
+        <div class="container">
+          <section class="hero">
+            <div class="hero__container">
+              <h1 class="hero__title">Invest with the best crypto traders.</h1>
+              <p class="hero__description">
+                A service for automatic trade copying on cryptocurrency
+                exchanges. The service is completely free for traders.
+              </p>
+              <button class="hero__btn">Create an account</button>
+            </div>
+          </section>
+        </div>
 
-        <section class="income">
+        <section class="income container">
           <h2 class="income__title">Passive Income</h2>
           <p class="income__descripcion">
             An investment management platform in the cryptocurrency market that
@@ -217,7 +219,7 @@
 
           <div>
             <h2 class="guide__title">Complete Guide to Public Trading</h2>
-            <iframe
+            <!-- <iframe
               class="guide__video"
               src="https://www.youtube.com/embed/-JjSpvfQVa4"
               title="Bitcoin"
@@ -225,15 +227,147 @@
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               referrerpolicy="strict-origin-when-cross-origin"
               allowfullscreen
-            ></iframe>
-            <!-- <iframe class="guide__video"
-              src="https://www.youtube.com/embed/-JjSpvfQVa4?si=82k_ddYANbgPlG16?controls=0&modestbranding=1&showinfo=0&rel=0"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerpolicy="strict-origin-when-cross-origin"
-              allowfullscreen
             ></iframe> -->
+
+            <video
+              class="guide__video"
+              src="./video/video-traiding.mp4"
+              controls
+              preload="metadata"
+            ></video>
+          </div>
+        </section>
+
+        <section class="trading container">
+          <h2 class="trading__title">Public trading</h2>
+          <p class="trading__descripcion">
+            An investment management platform for the cryptocurrency market that
+            allows private investors to copy real trades of successful
+            professional traders.
+          </p>
+
+          <ul class="trading__list">
+            <li class="trading__item">
+              <picture>
+                <source
+                  srcset="./img/IncomeSection/Income-img-first-desktop.png"
+                  media="(min-width:1216px)"
+                />
+                <img
+                  srcset="./img/IncomeSection/Income-img-first-mobile.png"
+                  src="./img/IncomeSection/Income-img-first-mobile.png"
+                  alt=""
+                  class="trading__first-img"
+                />
+              </picture>
+              <div>
+                <h3 class="trading__second-title">
+                  Trade on your exchange, make it to the top traders list, and
+                  attract paid subscribers from around the world
+                </h3>
+                <p class="trading__second-descr">
+                  No need to create a Telegram channel for sharing signals or
+                  spend huge amounts on advertising. We attract the audience and
+                  automate the interaction process with subscribers. All you
+                  have to do is focus on trading.
+                </p>
+              </div>
+            </li>
+            <li class="trading__item">
+              <picture>
+                <source
+                  srcset="./img/IncomeSection/Income-img-second-desktop.png"
+                  media="(min-width:1216px)"
+                />
+                <img
+                  srcset="./img/IncomeSection/Income-img-second-mobile.png"
+                  src="./img/IncomeSection/Income-img-second-mobile.png"
+                  alt=""
+                  class="trading__second-img"
+                />
+              </picture>
+              <div>
+                <h3 class="trading__second-title">
+                  All your trades will be automatically executed for your
+                  subscribers.
+                </h3>
+                <p class="trading__second-descr">
+                  The percentage of the deposit, leverage, take profits, and
+                  stop losses will be automatically set in their trades. This
+                  saves them valuable time on entry, eliminates unnecessary
+                  questions, and ensures they follow your risk management
+                  strategy.
+                </p>
+              </div>
+            </li>
+          </ul>
+
+          <div class="trading-guide">
+            <h2 class="trading-guide__title">How does it work?</h2>
+            <ul class="trading-guide__list">
+              <li class="trading-guide__item">
+                <div class="trading-guide__background-icon">
+                  <svg class="trading-guide__icon">
+                    <use href="./img/symbol-defs.svg#registr2"></use>
+                  </svg>
+                </div>
+
+                <h3 class="trading-guide__subtitle">Sign up on our website</h3>
+                <p class="trading-guide__descr">
+                  Create a channel and connect the API from your exchange.
+                </p>
+              </li>
+              <li class="trading-guide__item">
+                <div class="trading-guide__background-icon">
+                  <svg class="trading-guide__icon">
+                    <use href="./img/symbol-defs.svg#money"></use>
+                  </svg>
+                </div>
+                <h3 class="trading-guide__subtitle">
+                  Continue trading on your exchange
+                </h3>
+                <p class="trading-guide__descr">
+                  We will collect statistics for all trades and display the
+                  results in the trader leaderboard
+                </p>
+              </li>
+              <li class="trading-guide__item">
+                <div class="trading-guide__background-icon">
+                  <svg class="trading-guide__icon">
+                    <use href="./img/symbol-defs.svg#rating"></use>
+                  </svg>
+                </div>
+
+                <h3 class="trading-guide__subtitle">
+                  Become one of the top traders
+                </h3>
+                <p class="trading-guide__descr">
+                  and gather paid subscribers from all over the world.
+                </p>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h2 class="trading-guide__title">
+              Complete Guide to Public Trading
+            </h2>
+            <!-- <iframe
+                      class="guide__video"
+                      src="https://www.youtube.com/embed/-JjSpvfQVa4"
+                      title="Bitcoin"
+                      frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      referrerpolicy="strict-origin-when-cross-origin"
+                      allowfullscreen
+                    ></iframe> -->
+
+            <video
+              class="trading-guide__video"
+              src="./video/video-traiding.mp4"
+              controls
+              preload="metadata"
+            ></video>
           </div>
         </section>
       </main>
