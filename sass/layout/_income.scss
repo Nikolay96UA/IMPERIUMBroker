@@ -221,7 +221,7 @@
   position: absolute;
   width: 200px;
   top: 40px;
-  left: 41px;
+  left: 33px;
   border-bottom: 2px solid rgba(5, 192, 204, 1);
   pointer-events: none;
 
@@ -230,7 +230,7 @@
     position: absolute;
     width: 200px;
     top: 40px;
-    left: 70px;
+    left: 82px;
 
     border-bottom: 2px solid rgba(5, 192, 204, 1);
     pointer-events: none;
@@ -241,7 +241,7 @@
     position: absolute;
     width: 200px;
     top: 45px;
-    left: 240px;
+    left: 258px;
 
     border-bottom: 2px solid rgba(5, 192, 204, 1);
     pointer-events: none;
@@ -252,7 +252,7 @@
     position: absolute;
     width: 200px;
     top: 45px;
-    left: 380px;
+    left: 399px;
 
     border-bottom: 2px solid rgba(5, 192, 204, 1);
     pointer-events: none;
@@ -325,7 +325,7 @@
     width: 32px;
     height: 32px;
     top: 242px;
-    left: 153px;
+    left: 175px;
   }
 
   @media screen and (min-width: 768px) {
@@ -394,15 +394,101 @@
   }
 }
 
+.video__container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.guide-video__title {
+  position: relative;
+  color: $primeryTextColor;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 25px;
+  text-align: center;
+  margin-bottom: 44px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 26px;
+    line-height: 33px;
+    margin-bottom: 44px;
+  }
+
+  @media screen and (min-width: 1220px) {
+    margin-bottom: 64px;
+  }
+}
+
+.guide-video__title::before {
+  content: "";
+  position: absolute;
+  width: 200px;
+  top: 65px;
+  left: 40px;
+  border-bottom: 2px solid rgba(5, 192, 204, 1);
+  pointer-events: none;
+
+  @media screen and (min-width: 422px) {
+    content: "";
+    position: absolute;
+    width: 200px;
+    top: 40px;
+    left: 82px;
+
+    border-bottom: 2px solid rgba(5, 192, 204, 1);
+    pointer-events: none;
+  }
+
+  @media screen and (min-width: 768px) {
+    content: "";
+    position: absolute;
+    width: 200px;
+    top: 45px;
+    left: 135px;
+
+    border-bottom: 2px solid rgba(5, 192, 204, 1);
+    pointer-events: none;
+  }
+
+  @media screen and (min-width: 1220px) {
+    content: "";
+    position: absolute;
+    width: 200px;
+    top: 45px;
+    left: 141px;
+
+    border-bottom: 2px solid rgba(5, 192, 204, 1);
+    pointer-events: none;
+  }
+}
+
+.guide__list {
+  display: block;
+  margin-bottom: 33px;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    gap: 42px;
+    margin-bottom: 60px;
+  }
+
+  @media screen and (min-width: 1220px) {
+    display: flex;
+    gap: 36px;
+    margin-bottom: 80px;
+  }
+}
+
 .guide__video {
-  width: 100%;
-  border-radius: 200px 0px 200px 0px;
+  max-width: 100%;
+  border-radius: 50px 0px 50px 0px;
 
   @media screen and (min-width: 768px) {
     height: 385px;
   }
 
-    @media screen and (min-width: 1220px) {
-      height: 540px;
-    }
+  @media screen and (min-width: 1220px) {
+    height: 540px;
+  }
 }

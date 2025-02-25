@@ -551,7 +551,7 @@ a {
   position: absolute;
   width: 200px;
   top: 40px;
-  left: 41px;
+  left: 33px;
   border-bottom: 2px solid rgb(5, 192, 204);
   pointer-events: none;
 }
@@ -561,7 +561,7 @@ a {
     position: absolute;
     width: 200px;
     top: 40px;
-    left: 70px;
+    left: 82px;
     border-bottom: 2px solid rgb(5, 192, 204);
     pointer-events: none;
   }
@@ -572,7 +572,7 @@ a {
     position: absolute;
     width: 200px;
     top: 45px;
-    left: 240px;
+    left: 258px;
     border-bottom: 2px solid rgb(5, 192, 204);
     pointer-events: none;
   }
@@ -583,7 +583,7 @@ a {
     position: absolute;
     width: 200px;
     top: 45px;
-    left: 380px;
+    left: 399px;
     border-bottom: 2px solid rgb(5, 192, 204);
     pointer-events: none;
   }
@@ -661,7 +661,7 @@ a {
     width: 32px;
     height: 32px;
     top: 242px;
-    left: 153px;
+    left: 175px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -734,9 +734,99 @@ a {
   }
 }
 
+.video__container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.guide-video__title {
+  position: relative;
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 25px;
+  text-align: center;
+  margin-bottom: 44px;
+}
+@media screen and (min-width: 768px) {
+  .guide-video__title {
+    font-size: 26px;
+    line-height: 33px;
+    margin-bottom: 44px;
+  }
+}
+@media screen and (min-width: 1220px) {
+  .guide-video__title {
+    margin-bottom: 64px;
+  }
+}
+
+.guide-video__title::before {
+  content: "";
+  position: absolute;
+  width: 200px;
+  top: 65px;
+  left: 40px;
+  border-bottom: 2px solid rgb(5, 192, 204);
+  pointer-events: none;
+}
+@media screen and (min-width: 422px) {
+  .guide-video__title::before {
+    content: "";
+    position: absolute;
+    width: 200px;
+    top: 40px;
+    left: 82px;
+    border-bottom: 2px solid rgb(5, 192, 204);
+    pointer-events: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .guide-video__title::before {
+    content: "";
+    position: absolute;
+    width: 200px;
+    top: 45px;
+    left: 135px;
+    border-bottom: 2px solid rgb(5, 192, 204);
+    pointer-events: none;
+  }
+}
+@media screen and (min-width: 1220px) {
+  .guide-video__title::before {
+    content: "";
+    position: absolute;
+    width: 200px;
+    top: 45px;
+    left: 141px;
+    border-bottom: 2px solid rgb(5, 192, 204);
+    pointer-events: none;
+  }
+}
+
+.guide__list {
+  display: block;
+  margin-bottom: 33px;
+}
+@media screen and (min-width: 768px) {
+  .guide__list {
+    display: flex;
+    gap: 42px;
+    margin-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1220px) {
+  .guide__list {
+    display: flex;
+    gap: 36px;
+    margin-bottom: 80px;
+  }
+}
+
 .guide__video {
-  width: 100%;
-  border-radius: 200px 0px 200px 0px;
+  max-width: 100%;
+  border-radius: 50px 0px 50px 0px;
 }
 @media screen and (min-width: 768px) {
   .guide__video {
@@ -756,15 +846,18 @@ a {
   border: 1px solid rgba(239, 232, 232, 0.6);
   border-radius: 20px;
   padding: 30px 24px;
+  margin-bottom: 50px;
 }
 @media screen and (min-width: 768px) {
   .trading {
     padding: 60px 24px;
+    margin-bottom: 60px;
   }
 }
 @media screen and (min-width: 1220px) {
   .trading {
     padding: 99px 109px;
+    margin-bottom: 120px;
   }
 }
 
@@ -986,7 +1079,7 @@ a {
   position: absolute;
   width: 200px;
   top: 40px;
-  left: 41px;
+  left: 33px;
   border-bottom: 2px solid rgb(5, 192, 204);
   pointer-events: none;
 }
@@ -996,7 +1089,7 @@ a {
     position: absolute;
     width: 200px;
     top: 40px;
-    left: 70px;
+    left: 82px;
     border-bottom: 2px solid rgb(5, 192, 204);
     pointer-events: none;
   }
@@ -1007,7 +1100,7 @@ a {
     position: absolute;
     width: 200px;
     top: 45px;
-    left: 240px;
+    left: 258px;
     border-bottom: 2px solid rgb(5, 192, 204);
     pointer-events: none;
   }
@@ -1018,7 +1111,7 @@ a {
     position: absolute;
     width: 200px;
     top: 45px;
-    left: 380px;
+    left: 399px;
     border-bottom: 2px solid rgb(5, 192, 204);
     pointer-events: none;
   }
@@ -1170,8 +1263,8 @@ a {
 }
 
 .trading-guide__video {
-  width: 100%;
-  border-radius: 200px 0px 200px 0px;
+  max-width: 100%;
+  border-radius: 50px 0px 50px 0px;
 }
 @media screen and (min-width: 768px) {
   .trading-guide__video {
@@ -1182,4 +1275,120 @@ a {
   .trading-guide__video {
     height: 540px;
   }
+}
+
+.security {
+  margin-bottom: 50px;
+}
+@media screen and (min-width: 768px) {
+  .security {
+    margin-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1220px) {
+  .security {
+    margin-bottom: 140px;
+  }
+}
+
+.security__title {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 36px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  margin-bottom: 11px;
+}
+@media screen and (min-width: 768px) {
+  .security__title {
+    font-size: 32px;
+    line-height: 53px;
+  }
+}
+
+.security__descr {
+  font-size: 14px;
+  line-height: 19px;
+  color: rgb(220, 220, 220);
+  text-align: center;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 768px) {
+  .security__descr {
+    font-size: 16px;
+    line-height: 26px;
+  }
+}
+
+.security__container {
+  text-align: center;
+  display: block;
+}
+@media screen and (min-width: 1220px) {
+  .security__container {
+    align-items: center;
+    display: flex;
+  }
+}
+
+.security__img {
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 1220px) {
+  .security__img {
+    width: 440px;
+  }
+}
+
+.security__list {
+  gap: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.security__item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 178px;
+  height: auto;
+  background-color: rgb(31, 44, 61);
+  border-radius: 20px;
+}
+@media screen and (min-width: 768px) {
+  .security__item {
+    justify-content: space-between;
+    max-width: 316px;
+    height: 320px;
+    padding: 27px 24px;
+  }
+}
+@media screen and (min-width: 1220px) {
+  .security__item {
+    justify-content: space-between;
+    max-width: 316px;
+  }
+}
+
+.security__background-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 79px;
+  height: 79px;
+  margin-bottom: 14px;
+  text-align: center;
+  border-radius: 100px;
+  background-color: rgba(255, 255, 255, 0.04);
+  -webkit-backdrop-filter: blur(30px);
+          backdrop-filter: blur(30px);
+  box-shadow: 0px -1px 2px 0px rgba(239, 232, 232, 0.6);
+}
+
+.security__icon {
+  width: 40px;
+  height: 40px;
 }/*# sourceMappingURL=main.css.map */

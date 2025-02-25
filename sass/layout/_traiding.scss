@@ -4,13 +4,16 @@
   border: 1px solid rgba(239, 232, 232, 0.6);
   border-radius: 20px;
   padding: 30px 24px;
+  margin-bottom: 50px;
 
   @media screen and (min-width: 768px) {
     padding: 60px 24px;
+    margin-bottom: 60px;
   }
 
   @media screen and (min-width: 1220px) {
     padding: 99px 109px;
+    margin-bottom: 120px;
   }
 }
 
@@ -218,7 +221,7 @@
   position: absolute;
   width: 200px;
   top: 40px;
-  left: 41px;
+  left: 33px;
   border-bottom: 2px solid rgba(5, 192, 204, 1);
   pointer-events: none;
 
@@ -227,7 +230,7 @@
     position: absolute;
     width: 200px;
     top: 40px;
-    left: 70px;
+    left: 82px;
 
     border-bottom: 2px solid rgba(5, 192, 204, 1);
     pointer-events: none;
@@ -238,7 +241,7 @@
     position: absolute;
     width: 200px;
     top: 45px;
-    left: 240px;
+    left: 258px;
 
     border-bottom: 2px solid rgba(5, 192, 204, 1);
     pointer-events: none;
@@ -249,7 +252,7 @@
     position: absolute;
     width: 200px;
     top: 45px;
-    left: 380px;
+    left: 399px;
 
     border-bottom: 2px solid rgba(5, 192, 204, 1);
     pointer-events: none;
@@ -392,8 +395,8 @@
 }
 
 .trading-guide__video {
-  width: 100%;
-  border-radius: 200px 0px 200px 0px;
+  max-width: 100%;
+  border-radius: 50px 0px 50px 0px;
 
   @media screen and (min-width: 768px) {
     height: 385px;
