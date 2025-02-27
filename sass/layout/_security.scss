@@ -1,12 +1,11 @@
 .security {
-  margin-bottom: 50px;
-
+  padding: 50px 0;
   @media screen and (min-width: 768px) {
-    margin-bottom: 60px;
+    padding: 60px 0;
   }
 
   @media screen and (min-width: 1220px) {
-    margin-bottom: 140px;
+    padding: 120px 0;
   }
 }
 
@@ -54,10 +53,20 @@
 }
 
 .security__list {
-  gap: 50px;
+  gap: 20px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin-bottom: 20px;
+
+  @media screen and (min-width: 768px) {
+    gap: 50px;
+    margin-bottom: 40px;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 50px;
+  }
 }
 
 .security__item {
@@ -70,6 +79,7 @@
   height: auto;
   background-color: rgba(31, 44, 61, 1);
   border-radius: 20px;
+  padding: 34px 7px;
 
   @media screen and (min-width: 768px) {
     justify-content: space-between;
@@ -90,15 +100,71 @@
   justify-content: center;
   width: 79px;
   height: 79px;
-  margin-bottom: 14px;
+  margin-bottom: 10px;
   text-align: center;
 
   border-radius: 100px;
   background-color: rgba(255, 255, 255, 0.04);
   backdrop-filter: blur(30px);
   box-shadow: 0px -1px 2px 0px rgba(239, 232, 232, 0.6);
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 23px;
+  }
 }
-.security__icon {
+
+.security__icon-card {
   width: 40px;
   height: 40px;
+}
+
+.security__title-card {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+
+  color: $primeryTextColor;
+
+  margin-bottom: 10px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 20px;
+    line-height: 26px;
+    margin-bottom: 23px;
+  }
+}
+
+.security__descr-card {
+  font-size: 12px;
+  line-height: 16px;
+
+  color: $textSecondary;
+
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+    line-height: 27px;
+  }
+}
+
+.registr-btn {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 25px;
+
+  color: $primeryTextColor;
+
+  height: 56px;
+  width: 100%;
+  padding: 15px 97px;
+
+  border-radius: 15px;
+
+  background-image: linear-gradient(
+    rgba(44, 144, 247, 1),
+    rgba(5, 192, 204, 1)
+  );
+
+    @media screen and (min-width: 768px) {
+           
+        }
 }
