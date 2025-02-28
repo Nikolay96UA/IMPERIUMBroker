@@ -1,7 +1,110 @@
 .footer {
+  position: relative;
   background-color: rgba(23, 27, 45, 1);
   color: $primeryTextColor;
   text-align: center;
+  padding: 42px 0;
+
+  @media screen and (min-width: 1220px) {
+    text-align: start;
+  }
 }
 
+.footer__container {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+  }
+}
 
+.telegram {
+  position: absolute;
+  width: 52px;
+  height: 52px;
+
+  top: -27px;
+  right: 85px;
+  background-color: rgba(44, 144, 247, 1);
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @media screen and (min-width: 768px) {
+        right: 26px;
+    }
+
+        @media screen and (min-width: 1220px) {
+          right: 42px;
+        }
+}
+
+.telegram__icon {
+  width: 27px;
+  height: 23px;
+}
+
+.footer__logo {
+  margin-bottom: 16px;
+}
+
+.footer__about {
+  font-size: 12px;
+  line-height: 14px;
+  margin-bottom: 24px;
+
+  @media screen and (min-width: 768px) {
+    width: 235px;
+  }
+}
+
+.footer__nav {
+  margin-bottom: 24px;
+}
+
+.footer-nav__list {
+  @media screen and (min-width: 768px) {
+    display: grid;
+    margin-left: 58px;
+    grid-template-columns: 136px 105px;
+    grid-template-rows: 9px 20px;
+    column-gap: 166px;
+    row-gap: 17px;
+  }
+
+  @media screen and (min-width: 1220px) {
+    margin-left: 275px;
+    grid-template-columns: 117px 108px 136px 79px;
+    column-gap: 40px;
+  }
+}
+
+.footer-nav__items:not(:last-child) {
+  margin-bottom: 12px;
+}
+
+.footer-nav__link {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 16px;
+
+  color: $primeryTextColor;
+
+  &:hover,
+  &:focus {
+    color: $accentTextColor;
+  }
+}
+
+.policy {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 16px;
+
+  color: $primeryTextColor;
+
+  &:hover,
+  &:focus {
+    color: $accentTextColor;
+  }
+}

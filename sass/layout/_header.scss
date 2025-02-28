@@ -28,6 +28,11 @@
   font-weight: 500;
   font-size: 13px;
   color: $primeryTextColor;
+
+  &:hover,
+  &:focus {
+    color: $accentTextColor;
+  }
 }
 
 .nav__button {
@@ -44,6 +49,13 @@
   padding: 7px 25px;
   display: flex;
   align-items: center;
+
+  &:hover,
+    &:focus {
+      background-image: linear-gradient(to right,
+            rgb(36, 143, 250),
+            rgb(5, 163, 174));
+    }
 }
 
 .button__icon {

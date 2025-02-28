@@ -15,9 +15,9 @@
 .hero__container {
   text-align: center;
 
-    @media screen and (min-width: 768px) {
-       text-align: start;
-      }
+  @media screen and (min-width: 768px) {
+    text-align: start;
+  }
 }
 
 .hero__title {
@@ -83,6 +83,15 @@
     rgba(44, 144, 247, 1),
     rgba(5, 192, 204, 1)
   );
+
+  &:hover,
+  &:focus {
+    background-image: linear-gradient(
+      to right,
+      rgb(36, 143, 250),
+      rgb(5, 163, 174)
+    );
+  }
 
   @media screen and (min-width: 768px) {
     display: inline-block;

@@ -159,12 +159,19 @@
 
   border-radius: 15px;
 
-  background-image: linear-gradient(
+  background: linear-gradient(
     rgba(44, 144, 247, 1),
     rgba(5, 192, 204, 1)
   );
 
-    @media screen and (min-width: 768px) {
-           
-        }
+  
+
+  &:hover,
+  &:focus {
+    background: linear-gradient(
+      to right,
+      rgb(36, 143, 250),
+      rgb(5, 163, 174)
+    );
+  }
 }
