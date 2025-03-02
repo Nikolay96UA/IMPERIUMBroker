@@ -1,0 +1,57 @@
+.login-form {
+  text-align: center;
+  max-width: 375px;
+  padding: 33px 15px;
+}
+
+.form__title {
+  font-weight: 700;
+  font-size: 27px;
+  line-height: 45px;
+
+  color: $primeryTextColor;
+
+  margin-bottom: 18px;
+}
+
+.income-group {
+  margin-bottom: 21px;
+}
+
+.radio__label {
+  display: inline-block;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 17px;
+
+  color: $textSecondary;
+
+  width: 110px;
+
+  cursor: pointer;
+  position: relative;
+  transition: color 0.3s ease-in-out;
+}
+
+.radio__label::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: #007bff;
+  transition: width 0.3s ease-in-out;
+}
+
+.radio__btn:checked + .radio__label {
+  color: #007bff;
+}
+
+.radio__btn:checked + .radio__label::after {
+  width: 100%;
+}
+
+.radio__btn {
+  display: none;
+}

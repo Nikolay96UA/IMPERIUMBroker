@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=
+    , initial-scale=1.0"
+    />
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./dist/css/main.min.css" />
+  </head>
+  <body>
+    <div class="background-logIn">
+      <header class="header">
+        <nav class="header__nav container">
+          <div class="header-mob-container">
+            <a class="header__logo" href="./index.html">
+              <img src="./img/Logo.png" alt="logo" />
+            </a>
+            <button class="mobile-menu__btn" data-menu-open>
+              <svg class="mobile-nenu__icon" width="24px" height="24px">
+                <use href="./img/symbol-defs.svg#Menu"></use>
+              </svg>
+            </button>
+          </div>
+
+          <ul class="nav__list">
+            <li class="nav__items list">
+              <a class="nav__link" href="#income">Passive Income</a>
+            </li>
+            <li class="nav__items list">
+              <a class="nav__link" href="#public">Public Trading</a>
+            </li>
+            <li class="nav__items list">
+              <a class="nav__link" href="#security">Income and Security</a>
+            </li>
+            <li class="nav__items list">
+              <a class="nav__link" href="#feedback">Feedback</a>
+            </li>
+            <li class="nav__items list">
+              <a class="nav__button">
+                <svg class="button__icon" width="16px" height="17px">
+                  <use href="./img/symbol-defs.svg#Profile"></use>
+                </svg>
+                <span class="log-btn__title">Log In</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="mobile-menu is-hidden" data-menu>
+          <div class="menu-content">
+            <div>
+              <button type="button" class="menu-close" data-menu-close>
+                <svg
+                  width="40"
+                  height="40"
+                  class="close-menu__icon"
+                  aria-label="Перемикач мобільного меню"
+                >
+                  <use
+                    href="./img/symbol-defs.svg#close-modal"
+                    class="icon-menu"
+                  ></use>
+                </svg>
+              </button>
+
+              <nav class="mob-nav">
+                <ul class="list mob-nav__site">
+                  <li class="mob-nav__list">
+                    <a href="#income" class="mob-nav__link">Passive Income</a>
+                  </li>
+
+                  <li class="mob-nav__list">
+                    <a href="#public" class="mob-nav__link">Public Trading</a>
+                  </li>
+
+                  <li class="mob-nav__list">
+                    <a href="#securiry" class="mob-nav__link"
+                      >Income and Security</a
+                    >
+                  </li>
+
+                  <li class="mob-nav__list">
+                    <a href="#feedback" class="mob-nav__link">Feedback</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <section class="login-form container">
+          <h1 class="form__title">Log In</h1>
+
+          <form>
+            <div
+              class="income-group"
+              role="radio"
+              aria-labelledby="type-income"
+            >
+              <input
+                id="passive"
+                class="radio__btn"
+                type="radio"
+                name="type-income"
+                value="passive"
+              />
+              <label for="passive" class="radio__label"> Passive income </label>
+
+              <input
+                id="public"
+                class="radio__btn"
+                type="radio"
+                name="type-income"
+                value="public"
+              />
+              <label for="public" class="radio__label"> Public Trading </label>
+            </div>
+
+            <div role="group" aria-labelledby="registr-data">
+              <label>
+                <input type="email" name="email" placeholder="Email" />
+              </label>
+              <label>
+                <input
+                  type="password"
+                  name="psw"
+                  minlength="5"
+                  maxlength="10"
+                  placeholder="Password"
+                />
+              </label>
+            </div>
+            <button type="submit">Log In</button>
+          </form>
+
+          <a href="">Forgot your password?</a>
+
+          <p>Don't have an account yet?</p>
+          <a href="">Sign up</a>
+        </section>
+      </main>
+
+      <footer class="footer" id="feedback">
+        <div class="container">
+          <a class="telegram" href="">
+            <svg class="telegram__icon">
+              <use href="./img/symbol-defs.svg#telegram"></use>
+            </svg>
+          </a>
+          <div class="footer__container">
+            <div>
+              <a href="./index.html">
+                <img class="footer__logo" src="./img/Logo.png" alt="logo" />
+              </a>
+
+              <p class="footer__about">
+                A cryptocurrency investment management platform
+              </p>
+            </div>
+
+            <nav class="footer__nav">
+              <ul class="footer-nav__list">
+                <li class="footer-nav__items">
+                  <a class="footer-nav__link" href="#income">Passive Income</a>
+                </li>
+                <li class="footer-nav__items">
+                  <a class="footer-nav__link" href="#public">Public Trading</a>
+                </li>
+                <li class="footer-nav__items">
+                  <a class="footer-nav__link" href="#security"
+                    >Income and Security</a
+                  >
+                </li>
+                <li class="footer-nav__items">
+                  <a class="footer-nav__link" href="#feedback">Feedback</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+          <a class="policy" href="">Privacy Policy</a>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

@@ -2,6 +2,7 @@
 @import "./base/variables";
 
 @import "./pages/home";
+@import "./pages/logInPage.scss";
 
 @import "./layout/header";
 @import "./layout/hero";
@@ -9,3 +10,6 @@
 @import "./layout/traiding";
 @import "./layout/security";
 @import "./layout/footer";
+
+
+@import "./layout/logInForm";
