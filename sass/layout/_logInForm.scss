@@ -1,7 +1,11 @@
 .login-form {
+  background-color: rgba(255, 255, 255, 0.06);
   text-align: center;
   max-width: 375px;
   padding: 33px 15px;
+
+  border-radius: 20px;
+  margin-bottom: 40px;
 }
 
 .form__title {
@@ -26,7 +30,7 @@
 
   color: $textSecondary;
 
-  width: 110px;
+  width: 150px;
 
   cursor: pointer;
   position: relative;
@@ -40,12 +44,12 @@
   bottom: 0;
   width: 0;
   height: 2px;
-  background-color: #007bff;
+  background-color: rgba(115, 255, 242, 1);
   transition: width 0.3s ease-in-out;
 }
 
 .radio__btn:checked + .radio__label {
-  color: #007bff;
+  color: rgba(115, 255, 242, 1);
 }
 
 .radio__btn:checked + .radio__label::after {
@@ -54,4 +58,69 @@
 
 .radio__btn {
   display: none;
+}
+
+input {
+  color: $textSecondary;
+  background-color: rgba(255, 255, 255, 0.06);
+
+  height: 56px;
+  width: 100%;
+  border: 0;
+  border-radius: 15px;
+  margin-bottom: 21px;
+  padding-left: 15px;
+}
+
+.form__btn {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 25px;
+
+  color: $textSecondary;
+  background-image: linear-gradient(
+    rgba(44, 144, 247, 1),
+    rgba(5, 192, 204, 1)
+  );
+
+  height: 56px;
+  width: 100%;
+  border: 0;
+  border-radius: 15px;
+  margin-bottom: 21px;
+}
+
+.pass-recovery {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 19px;
+  color: $primeryTextColor;
+  text-decoration: underline;
+}
+
+.reg-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 24px;
+  padding-top: 24px;
+  border-top: 1px solid $primeryTextColor;
+}
+
+.reg-qv {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 19px;
+
+  color: $primeryTextColor;
+  margin-right: 35px;
+}
+
+.reg-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 19px;
+
+  color: rgba(115, 255, 242, 1);
+
+  text-decoration: underline;
 }

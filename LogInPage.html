@@ -137,10 +137,16 @@
 
             <div role="group" aria-labelledby="registr-data">
               <label>
-                <input type="email" name="email" placeholder="Email" />
+                <input
+                  class="input__email"
+                  type="email"
+                  name="email"
+                  placeholder="Email"
+                />
               </label>
               <label>
                 <input
+                  class="input_pass"
                   type="password"
                   name="psw"
                   minlength="5"
@@ -149,13 +155,15 @@
                 />
               </label>
             </div>
-            <button type="submit">Log In</button>
+            <button class="form__btn" type="submit">Log In</button>
           </form>
 
-          <a href="">Forgot your password?</a>
+          <a class="pass-recovery" href="">Forgot your password?</a>
 
-          <p>Don't have an account yet?</p>
-          <a href="">Sign up</a>
+          <div class="reg-container">
+            <p class="reg-qv">Don't have an account yet?</p>
+            <a class="reg-link" href="">Sign up</a>
+          </div>
         </section>
       </main>
 

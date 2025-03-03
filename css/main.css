@@ -1606,9 +1606,12 @@ a {
 }
 
 .login-form {
+  background-color: rgba(255, 255, 255, 0.06);
   text-align: center;
   max-width: 375px;
   padding: 33px 15px;
+  border-radius: 20px;
+  margin-bottom: 40px;
 }
 
 .form__title {
@@ -1629,7 +1632,7 @@ a {
   font-size: 13px;
   line-height: 17px;
   color: rgb(220, 220, 220);
-  width: 110px;
+  width: 150px;
   cursor: pointer;
   position: relative;
   transition: color 0.3s ease-in-out;
@@ -1642,12 +1645,12 @@ a {
   bottom: 0;
   width: 0;
   height: 2px;
-  background-color: #007bff;
+  background-color: rgb(115, 255, 242);
   transition: width 0.3s ease-in-out;
 }
 
 .radio__btn:checked + .radio__label {
-  color: #007bff;
+  color: rgb(115, 255, 242);
 }
 
 .radio__btn:checked + .radio__label::after {
@@ -1656,4 +1659,60 @@ a {
 
 .radio__btn {
   display: none;
+}
+
+input {
+  color: rgb(220, 220, 220);
+  background-color: rgba(255, 255, 255, 0.06);
+  height: 56px;
+  width: 100%;
+  border: 0;
+  border-radius: 15px;
+  margin-bottom: 21px;
+  padding-left: 15px;
+}
+
+.form__btn {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 25px;
+  color: rgb(220, 220, 220);
+  background-image: linear-gradient(rgb(44, 144, 247), rgb(5, 192, 204));
+  height: 56px;
+  width: 100%;
+  border: 0;
+  border-radius: 15px;
+  margin-bottom: 21px;
+}
+
+.pass-recovery {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 19px;
+  color: rgb(255, 255, 255);
+  text-decoration: underline;
+}
+
+.reg-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 24px;
+  padding-top: 24px;
+  border-top: 1px solid rgb(255, 255, 255);
+}
+
+.reg-qv {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 19px;
+  color: rgb(255, 255, 255);
+  margin-right: 35px;
+}
+
+.reg-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 19px;
+  color: rgb(115, 255, 242);
+  text-decoration: underline;
 }/*# sourceMappingURL=main.css.map */
