@@ -24,6 +24,7 @@
     />
     <link rel="stylesheet" href="./dist/css/main.min.css" />
   </head>
+
   <body>
     <div class="background-logIn">
       <header class="header">
@@ -108,7 +109,7 @@
 
       <main>
         <section class="login-form container">
-          <h1 class="form__title">Log In</h1>
+          <h1 class="form__title">Sign Up</h1>
 
           <form>
             <div
@@ -154,16 +155,25 @@
                   placeholder="Password"
                 />
               </label>
+              <label>
+                <input
+                  class="input_pass"
+                  type="password"
+                  name="psw"
+                  minlength="5"
+                  maxlength="10"
+                  placeholder="Repeat password"
+                />
+              </label>
             </div>
             <div class="form_nav">
-              <button class="form__btn" type="submit">Log In</button>
-              <a class="pass-recovery" href="">Forgot your password?</a>
+              <button class="signUp-form__btn" type="submit">Sign Up</button>
             </div>
           </form>
 
           <div class="reg-container">
-            <p class="reg-qv">Don't have an account yet?</p>
-            <a class="reg-link" href="./SignUpPage.html">Sign up</a>
+            <p class="reg-qv">Already registered?</p>
+            <a class="reg-link" href="./LogInPage.html">Log In</a>
           </div>
         </section>
       </main>

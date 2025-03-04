@@ -6,6 +6,17 @@
 
   border-radius: 20px;
   margin-bottom: 40px;
+
+  @media screen and (min-width: 768px) {
+    padding: 46px 33px;
+    max-width: 635px;
+    margin-bottom: 60px;
+  }
+
+  @media screen and (min-width:768px) {
+    padding: 90px 111px;
+    max-width: 790px; 
+  }
 }
 
 .form__title {
@@ -16,15 +27,25 @@
   color: $primeryTextColor;
 
   margin-bottom: 18px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 40px;
+    line-height: 67px;
+    margin-bottom: 32px;
+  }
 }
 
 .income-group {
   margin-bottom: 21px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 39px;
+  }
 }
 
 .radio__label {
   display: inline-block;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 13px;
   line-height: 17px;
 
@@ -35,25 +56,17 @@
   cursor: pointer;
   position: relative;
   transition: color 0.3s ease-in-out;
-}
 
-.radio__label::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 0;
-  height: 2px;
-  background-color: rgba(115, 255, 242, 1);
-  transition: width 0.3s ease-in-out;
+  @media screen and (min-width: 768px) {
+    font-size: 20px;
+    line-height: 26px;
+    width: 270px;
+  }
 }
 
 .radio__btn:checked + .radio__label {
+  text-decoration: underline;
   color: rgba(115, 255, 242, 1);
-}
-
-.radio__btn:checked + .radio__label::after {
-  width: 100%;
 }
 
 .radio__btn {
@@ -61,6 +74,9 @@
 }
 
 input {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 25px;
   color: $textSecondary;
   background-color: rgba(255, 255, 255, 0.06);
 
@@ -69,7 +85,16 @@ input {
   border: 0;
   border-radius: 15px;
   margin-bottom: 21px;
-  padding-left: 15px;
+  padding-left: 27px;
+}
+
+.form_nav {
+  margin-bottom: 25px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
 }
 
 .form__btn {
@@ -88,6 +113,11 @@ input {
   border: 0;
   border-radius: 15px;
   margin-bottom: 21px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+    width: 280px;
+  }
 }
 
 .pass-recovery {
@@ -100,7 +130,7 @@ input {
 
 .reg-container {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   margin-top: 24px;
   padding-top: 24px;
   border-top: 1px solid $primeryTextColor;

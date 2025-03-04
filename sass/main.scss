@@ -3,6 +3,8 @@
 
 @import "./pages/home";
 @import "./pages/logInPage.scss";
+@import "./pages/signUpPage";
+
 
 @import "./layout/header";
 @import "./layout/hero";
@@ -11,5 +13,6 @@
 @import "./layout/security";
 @import "./layout/footer";
 
+@import "./layout/authForm";
+@import "./layout/signUpForm";
 
-@import "./layout/logInForm";
