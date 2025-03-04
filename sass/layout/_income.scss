@@ -158,7 +158,9 @@
   position: absolute;
   width: 200px;
   top: 0px;
-  left: 40px;
+  left: 50%;
+  right: 50%;
+  transform: translate(-50%, -50%);
   border-bottom: 2px solid rgba(5, 192, 204, 1);
   pointer-events: none;
 
@@ -166,8 +168,10 @@
     content: "";
     position: absolute;
     width: 200px;
-    top: 0px;
-    left: 70px;
+
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
 
     border-bottom: 2px solid rgba(5, 192, 204, 1);
     pointer-events: none;
@@ -178,7 +182,7 @@
     position: absolute;
     width: 200px;
     top: 0px;
-    left: 0px;
+    left: 20%;
 
     border-bottom: 2px solid rgba(5, 192, 204, 1);
     pointer-events: none;
@@ -188,8 +192,8 @@
     content: "";
     position: absolute;
     width: 200px;
-    top: 0px;
-    left: 0px;
+
+    left: 17%;
 
     border-bottom: 2px solid rgba(5, 192, 204, 1);
     pointer-events: none;
@@ -220,8 +224,10 @@
   content: "";
   position: absolute;
   width: 200px;
-  top: 40px;
-  left: 33px;
+  top: 170%;
+  left: 50%;
+  right: 50%;
+  transform: translate(-50%, -50%);
   border-bottom: 2px solid rgba(5, 192, 204, 1);
   pointer-events: none;
 
@@ -230,7 +236,6 @@
     position: absolute;
     width: 200px;
     top: 40px;
-    left: 82px;
 
     border-bottom: 2px solid rgba(5, 192, 204, 1);
     pointer-events: none;
@@ -241,8 +246,6 @@
     position: absolute;
     width: 200px;
     top: 45px;
-    left: 258px;
-
     border-bottom: 2px solid rgba(5, 192, 204, 1);
     pointer-events: none;
   }
@@ -252,7 +255,6 @@
     position: absolute;
     width: 200px;
     top: 45px;
-    left: 399px;
 
     border-bottom: 2px solid rgba(5, 192, 204, 1);
     pointer-events: none;
@@ -424,8 +426,10 @@
   content: "";
   position: absolute;
   width: 200px;
-  top: 65px;
-  left: 40px;
+  top: 140%;
+  left: 50%;
+  right: 50%;
+  transform: translate(-50%, -50%);
   border-bottom: 2px solid rgba(5, 192, 204, 1);
   pointer-events: none;
 
@@ -434,7 +438,6 @@
     position: absolute;
     width: 200px;
     top: 40px;
-    left: 82px;
 
     border-bottom: 2px solid rgba(5, 192, 204, 1);
     pointer-events: none;
@@ -445,7 +448,6 @@
     position: absolute;
     width: 200px;
     top: 45px;
-    left: 135px;
 
     border-bottom: 2px solid rgba(5, 192, 204, 1);
     pointer-events: none;
@@ -456,7 +458,6 @@
     position: absolute;
     width: 200px;
     top: 45px;
-    left: 141px;
 
     border-bottom: 2px solid rgba(5, 192, 204, 1);
     pointer-events: none;
