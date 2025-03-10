@@ -15,25 +15,30 @@
   }
 
   @media screen and (min-width: 768px) {
-    background-image: linear-gradient(
+    background-image:url(../../img/Bg-img3.png),
+      url(../../img/Bg-img7.png), linear-gradient(
       to bottom,
       rgba(8, 30, 46, 1) 90%,
       rgba(28, 44, 63, 0.29) 200%
     );
-    background-size: 100%;
+    background-size:300px,
+      700px, 100%;
     background-repeat: no-repeat;
-    background-position: top;
+    background-position: top 74% left 0%,
+      top 0px right 0%,
+      top;
   }
 
   @media screen and (min-width: 1220px) {
-    background-image: linear-gradient(
-      to bottom,
-      rgba(8, 30, 46, 1) 90%,
-      rgba(28, 44, 63, 0.29) 200%
-    );
+    background-image: url(../../img/Bg-img3.png), url(../../img/Bg-img7.png),
+      linear-gradient(
+        to bottom,
+        rgba(8, 30, 46, 1) 90%,
+        rgba(28, 44, 63, 0.29) 200%
+      );
 
-    background-size: 100%;
+    background-size: 400px, 1000px, 100%;
     background-repeat: no-repeat;
-    background-position: top;
+    background-position: top 64% left 0%, top 0px right 0px, top;
   }
 }
