@@ -13,9 +13,9 @@
     margin-bottom: 60px;
   }
 
-  @media screen and (min-width:768px) {
+  @media screen and (min-width: 768px) {
     padding: 90px 111px;
-    max-width: 790px; 
+    max-width: 790px;
   }
 }
 
@@ -98,6 +98,7 @@ input {
 }
 
 .form__btn {
+  align-content: center;
   font-weight: 500;
   font-size: 15px;
   line-height: 25px;

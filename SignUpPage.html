@@ -108,74 +108,85 @@
       </header>
 
       <main>
-        <section class="login-form container">
-          <h1 class="form__title">Sign Up</h1>
+        <div class="regisrt-main container">
+          <img
+            class="registr-bg"
+            src="./img/bg-registr-page.png"
+            alt="background"
+          />
+          <section class="login-form">
+            <h1 class="form__title">Sign Up</h1>
 
-          <form>
-            <div
-              class="income-group"
-              role="radio"
-              aria-labelledby="type-income"
-            >
-              <input
-                id="passive"
-                class="radio__btn"
-                type="radio"
-                name="type-income"
-                value="passive"
-              />
-              <label for="passive" class="radio__label"> Passive income </label>
-
-              <input
-                id="public"
-                class="radio__btn"
-                type="radio"
-                name="type-income"
-                value="public"
-              />
-              <label for="public" class="radio__label"> Public Trading </label>
-            </div>
-
-            <div role="group" aria-labelledby="registr-data">
-              <label>
+            <form>
+              <div
+                class="income-group"
+                role="radio"
+                aria-labelledby="type-income"
+              >
                 <input
-                  class="input__email"
-                  type="email"
-                  name="email"
-                  placeholder="Email"
+                  id="passive"
+                  class="radio__btn"
+                  type="radio"
+                  name="type-income"
+                  value="passive"
                 />
-              </label>
-              <label>
-                <input
-                  class="input_pass"
-                  type="password"
-                  name="psw"
-                  minlength="5"
-                  maxlength="10"
-                  placeholder="Password"
-                />
-              </label>
-              <label>
-                <input
-                  class="input_pass"
-                  type="password"
-                  name="psw"
-                  minlength="5"
-                  maxlength="10"
-                  placeholder="Repeat password"
-                />
-              </label>
-            </div>
-            <div class="form_nav">
-              <button class="signUp-form__btn" type="submit">Sign Up</button>
-            </div>
-          </form>
+                <label for="passive" class="radio__label">
+                  Passive income
+                </label>
 
-          <div class="reg-container">
-            <p class="reg-qv">Already registered?</p>
-            <a class="reg-link" href="./LogInPage.html">Log In</a>
-          </div>
-        </section>
+                <input
+                  id="public"
+                  class="radio__btn"
+                  type="radio"
+                  name="type-income"
+                  value="public"
+                />
+                <label for="public" class="radio__label">
+                  Public Trading
+                </label>
+              </div>
+
+              <div role="group" aria-labelledby="registr-data">
+                <label>
+                  <input
+                    class="input__email"
+                    type="email"
+                    name="email"
+                    placeholder="Email"
+                  />
+                </label>
+                <label>
+                  <input
+                    class="input_pass"
+                    type="password"
+                    name="psw"
+                    minlength="5"
+                    maxlength="10"
+                    placeholder="Password"
+                  />
+                </label>
+                <label>
+                  <input
+                    class="input_pass"
+                    type="password"
+                    name="psw"
+                    minlength="5"
+                    maxlength="10"
+                    placeholder="Repeat password"
+                  />
+                </label>
+              </div>
+              <div class="form_nav">
+                <button class="signUp-form__btn" type="submit">Sign Up</button>
+              </div>
+            </form>
+
+            <div class="reg-container">
+              <p class="reg-qv">Already registered?</p>
+              <a class="reg-link" href="./LogInPage.html">Log In</a>
+            </div>
+          </section>
+        </div>
       </main>
 
       <footer class="footer" id="feedback">
