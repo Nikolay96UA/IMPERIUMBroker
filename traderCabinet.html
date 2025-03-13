@@ -27,6 +27,7 @@
 
       <div class="settings-nav">
         <button class="settings-btn">Trader</button>
+
         <a class="bank" href="">
           <svg class="bank-icon">
             <use href="./img/trading-cabinet/symbol-defs.svg#wallet"></use>
@@ -34,43 +35,56 @@
           <p class="bank-summ">$ 5000</p>
         </a>
 
-        <ul>
-          <li>
-            <button>UA</button>
-          </li>
-          <li>
-            <button>EN</button>
-          </li>
-          <li>
-            <button>RU</button>
-          </li>
-        </ul>
+        <div class="custom-dropdown">
+          <button class="dropdown-btn"></button>
+          <ul class="dropdown-list">
+            <li data-lang="en">EN</li>
+            <li data-lang="ua">UA</li>
+          </ul>
+        </div>
 
-        <ul>
-          <li>
-            <svg>
-              <use></use>
-            </svg>
-            <p></p>
-          </li>
-          <li>
-            <svg>
-              <use></use>
-            </svg>
-            <p></p>
-          </li>
-          <li>
-            <svg>
-              <use></use>
-            </svg>
-            <p></p>
-          </li>
-        </ul>
+        <div class="profil-menu">
+          <button class="btn-menu">
+            <img src="./img/profile.svg" alt="profil" />
+          </button>
+          <ul class="menu-list">
+            <li>
+              <a href=""
+                ><svg class="menu-icon__first">
+                  <use
+                    href="./img/trading-cabinet/symbol-defs.svg#filter"
+                  ></use>
+                </svg>
+                <p>Balance Management</p></a
+              >
+            </li>
+            <li>
+              <a href=""
+                ><svg class="menu-icon">
+                  <use
+                    href="./img/trading-cabinet/symbol-defs.svg#setting"
+                  ></use>
+                </svg>
+                <p>Settings</p>
+              </a>
+            </li>
+            <li>
+              <a href=""
+                ><svg class="menu-icon">
+                  <use
+                    href="./img/trading-cabinet/symbol-defs.svg#logout"
+                  ></use>
+                </svg>
+                <p>Log out</p>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
 
     <div class="workspace-container">
-      <nav class="cabinet-nav">
+      <!-- <nav class="cabinet-nav">
         <ul>
           <li>
             <svg>
@@ -99,26 +113,31 @@
             ><a href="">Help</a>
           </li>
         </ul>
-      </nav>
+      </nav> -->
 
       <div>
-        <section class="profil-info">
-          <img src="" alt="" />
+        <section class="profile-info">
+          <div class="persona">
+            <div class="avatar-wrapper">
+              <img class="avatar" src="./img/profile.svg" alt="avatar" />
+            </div>
+            <p class="name">Mykola</p>
+          </div>
           <div class="info">
             <ul class="info-list">
               <li class="info-card">
-                <p></p>
+                <p class="card-title">Subscribers</p>
                 <div>
-                  <svg>
+                  <svg class="card-icon">
                     <use></use>
                   </svg>
                   <p></p>
                 </div>
               </li>
               <li class="info-card">
-                <p></p>
+                <p class="card-title">Total profit</p>
                 <div>
-                  <svg>
+                  <svg class="card-icon">
                     <use></use>
                   </svg>
                   <p></p>
@@ -127,7 +146,8 @@
             </ul>
           </div>
         </section>
-        <section class="workspace">
+
+        <!-- <section class="workspace">
           <h2>Your channels</h2>
           <div class="spot">
             <h2>Spot</h2>
@@ -159,8 +179,11 @@
             </button>
             <button class="futures-help">Connection instructions</button>
           </div>
-        </section>
+        </section> -->
       </div>
     </div>
+
+    <script src="./js/languageBtn.js"></script>
+    <script src="./js/prifilMenu.js"></script>
   </body>
 </html>
